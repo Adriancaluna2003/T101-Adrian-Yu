@@ -1,52 +1,20 @@
-# Prerequisites
-*.d
+#include<stdio.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+int main()
+{
+    int num1;
+    int num2;
+    int num3;
+    int result;
+    
+    printf("Input the first number: ");
+    scanf("%d", &num1);
+    printf("Input the second number: ");
+    scanf("%d", &num2);
+    printf("Input the third number: ");
+    scanf("%d", &num3);
+    //divide and times
+    result = num1 / num2 * num3;
+    printf("\n%d divide %d * %d is %d", num1, num2,num3, result);
+    
+}
